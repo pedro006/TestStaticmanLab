@@ -4,7 +4,7 @@ subtitle: A barebone GitHub Pages with static comments
 email: your-email@domain.com
 description: Test
 baseurl: ""
-url: "https://pedro006.github.io/teststaticman/"
+url: "https://pierremariefort.com/teststaticman/"
 locale: en
 github_username:  pedro006
 
@@ -13,4 +13,4 @@ markdown: kramdown
 
 staticman:
   api: "https://staticman3.herokuapp.com/v3/entry/github/vincenttam/TestStaticmanLab/master/comments"
-  path: "_data/comments/"
+  path: "_data/comments"
