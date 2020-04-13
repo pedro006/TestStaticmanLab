@@ -14,7 +14,7 @@ comments:
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted. The origin is sent as part as the `options` object
   # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
-  allowedOrigins: ["https://vincenttam.github.io/TestStaticmanLab/"]
+  allowedOrigins: ["https://pedro006.github.io/teststaticman/"]
 
   # (*) REQUIRED
   #
@@ -47,7 +47,7 @@ comments:
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: true
+  moderation: false
 
   # Name of the site. Used in notification emails.
   name: "eduardoboucas.com"
