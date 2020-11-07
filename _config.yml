@@ -14,3 +14,19 @@ markdown: kramdown
 staticman:
   api: "https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/"
   path: "_data/"
+
+
+exclude:
+  - .jekyll-cache
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - feed.xml
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

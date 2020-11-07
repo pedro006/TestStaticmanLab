@@ -1,14 +1,17 @@
 <div class="comments">
   <h3>Comments</h3>
-  {% assign comments = site.data %}
+  {% assign comments = site.data | sort %}
+
 </div>
 <form method="POST" action="{{ site.staticman.api }}">
-  {% for comment in comments | sort %}
+  {% for comment in comments %}
   {% if forloop.index == 1 %}
   {% assign item = comment[1] %}
   {% assign name = item.name %}
   {% assign email = item.email %}
   {% assign message = item.message %}
+  {{item.date}}
+
   <input name="options[redirect]" type="hidden" value="{{ site.url }}">
   <input name="options[slug]" type="hidden" value="test-slug">
   <label>Name: <input value="{{ name }}" name="fields[name]" type="text"></label><br>
