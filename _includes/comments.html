@@ -8,14 +8,13 @@
   {% if forloop.index == 1 %}
   {% assign item = comment[1] %}
   {% assign name = item.name %}
-  {% assign email = item.email %}
+  {% assign text = item.text %}
   {% assign message = item.message %}
-  {{item.date}}
 
   <input name="options[redirect]" type="hidden" value="{{ site.url }}">
   <input name="options[slug]" type="hidden" value="test-slug">
   <label>Name: <input value="{{ name }}" name="fields[name]" type="text"></label><br>
-  <label>Email: <input value="{{ email }}" name="fields[email]" type="email"></label><br>
+  <label>text: <input value="{{ text }}" name="fields[email]" type="text"></label><br>
   <label>Message: <br><textarea name="fields[message]" rows="12" cols="36">{{ message }}</textarea></label><br>
   <input type="submit" value="Submit">
   {% endif %}
