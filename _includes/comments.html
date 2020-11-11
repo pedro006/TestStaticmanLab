@@ -1,9 +1,10 @@
 <div class="comments">
   <h3>Comments</h3>
   {% assign comments = site.data.comments | sort %}
+  {% assign labels = site.data.labels | sort %}
 
 </div>
-<form method="POST" action="{{ site.staticman.api }}">
+<form id="1" method="POST" action="{{ site.staticman.apicomments }}">
   {% for comment in comments reversed %}
   {% if forloop.index == 1 %}
   {% assign item = comment[1] %}
@@ -12,11 +13,36 @@
   {% assign message = item.message %}
 
   <input name="options[redirect]" type="hidden" value="{{ site.url }}">
-  <input name="options[slug]" type="hidden" value="test-slug">
+  <input name="options[slug]" type="hidden" value="comments">
   <label>Name: <input value="{{ name }}" name="fields[name]" type="text"></label><br>
   <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
   <label>Message: <br><textarea name="fields[message]" rows="12" cols="36">{{ message }}</textarea></label><br>
   <input type="submit" value="Submit">
   {% endif %}
+  {% endfor %}
+</form>
+
+<form id="2" method="POST" action="{{ site.staticman.apilabels }}">
+  {% for label in labels reversed %}
+  {% if forloop.index == 1 %}
+  {% assign item = label[1] %}
+  {% assign name = item.name %}
+  {% assign checbox = item.checkbox %}
+
+  <input name="options[redirect]" type="hidden" value="{{ site.url }}">
+  <input name="options[slug]" type="hidden" value="test-slug">
+  <label>Name: <input value="{{ name }}" name="fields[name]" type="text"></label>
+  <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
+  <input type="checkbox" name="fields[checkbox]" id="checkbox" {% if checkbox %}checked{% endif %}>
+  <input type="submit" value="Submit">
+
+  {% endif %}
+  {% else %}
+  <input name="options[redirect]" type="hidden" value="{{ site.url }}">
+  <input name="options[slug]" type="hidden" value="labels">
+  <label>Name: <input value="" name="fields[name]" type="text"></label>
+  <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
+  <input type="checkbox" name="fields[checkbox]" id="checkbox">
+  <input type="submit" value="Submit">
   {% endfor %}
 </form>

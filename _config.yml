@@ -12,9 +12,8 @@ github_username:  pedro006
 markdown: kramdown
 
 staticman:
-  api: "https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/comments"
-  path: "_data/comments"
-
+  apicomment: "https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/comments"
+  apilabel: "https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels"
 
 exclude:
   - .jekyll-cache

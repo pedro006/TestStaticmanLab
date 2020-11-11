@@ -17,9 +17,10 @@
 <div class="comments">
   <h3>Comments</h3>
   
+  
 
 </div>
-<form method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/comments">
+<form id="1" method="POST" action="">
   
   
   
@@ -28,7 +29,7 @@
   
 
   <input name="options[redirect]" type="hidden" value="http://localhost:4000">
-  <input name="options[slug]" type="hidden" value="test-slug">
+  <input name="options[slug]" type="hidden" value="comments">
   <label>Name: <input value="Change" name="fields[name]" type="text"></label><br>
   <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
   <label>Message: <br><textarea name="fields[message]" rows="12" cols="36">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -58,6 +59,17 @@ This is changed.</textarea></label><br>
   
   
   
+  
+</form>
+
+<form id="2" method="POST" action="">
+  
+  <input name="options[redirect]" type="hidden" value="http://localhost:4000">
+  <input name="options[slug]" type="hidden" value="labels">
+  <label>Name: <input value="" name="fields[name]" type="text"></label>
+  <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
+  <input type="checkbox" name="fields[checkbox]" id="checkbox">
+  <input type="submit" value="Submit">
   
 </form>
 
