@@ -1,7 +1,10 @@
 <div class="comments">
   <h3>Comments</h3>
   {% assign comments = site.data.comments | sort %}
-  {% assign labels = site.data.labels | sort %}
+  {% assign labels = site.data.labels %}
+  {% if labels %}
+  {% assign labels = labels | sort %}
+  {% endif %}
 
 </div>
 <form id="1" method="POST" action="{{ site.staticman.apicomment }}">
