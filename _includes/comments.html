@@ -4,7 +4,7 @@
   {% assign labels = site.data.labels | sort %}
 
 </div>
-<form id="1" method="POST" action="{{ site.staticman.apicomments }}">
+<form id="1" method="POST" action="{{ site.staticman.apicomment }}">
   {% for comment in comments reversed %}
   {% if forloop.index == 1 %}
   {% assign item = comment[1] %}
@@ -22,7 +22,7 @@
   {% endfor %}
 </form>
 
-<form id="2" method="POST" action="{{ site.staticman.apilabels }}">
+<form id="2" method="POST" action="{{ site.staticman.apilabel }}">
   {% for label in labels reversed %}
   {% if forloop.index == 1 %}
   {% assign item = label[1] %}
