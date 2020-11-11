@@ -17,8 +17,6 @@
 <div class="comments">
   <h3>Comments</h3>
   
-  
-  
 
 </div>
 <form id="1" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/comments">
@@ -34,6 +32,15 @@
   <label>Name: <input value="Pierre" name="fields[name]" type="text"></label><br>
   <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
   <label>Message: <br><textarea name="fields[message]" rows="12" cols="36">A message.</textarea></label><br>
+  <select name="field[select]" id="select" multiple>
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+  </select>
   <input type="submit" value="Submit">
   
   
@@ -57,18 +64,30 @@
   
   
   
+  
+  
 </form>
+<div class="comments">
+  <h3>Labels</h3>
+  
+  
 
-<form id="2" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels">
-  
-  <input name="options[redirect]" type="hidden" value="http://localhost:4000">
-  <input name="options[slug]" type="hidden" value="labels">
-  <label>Name: <input value="" name="fields[name]" type="text"></label>
-  <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
-  <input type="checkbox" name="fields[checkbox]" id="checkbox">
-  <input type="submit" value="Submit">
-  
-</form>
+  <form id="labels-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels">
+    
+    
+    
+    
+    
+    <input name="options[redirect]" type="hidden" value="http://localhost:4000">
+    <input name="options[slug]" type="hidden" value="labels">
+    <label>Name: <input value="Pedro" name="fields[name]" type="text"></label>
+    <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
+    <input type="checkbox" name="fields[checkbox]" id="checkbox" checked>
+    <input type="submit" value="Submit">
+
+    
+    
+  </form>
 
 <footer>
   <p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Flocalhost%3A4000">Valid HTML5</a>
