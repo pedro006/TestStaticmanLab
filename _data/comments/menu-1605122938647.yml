@@ -1,0 +1,7 @@
+_id: 252497a0-2454-11eb-a4f9-6d1b938a3777
+name: Pierre
+message: A message.sad
+select:
+  - dog
+  - cat
+date: 1605122938
