@@ -13,7 +13,13 @@
     {% assign checkbox = item.checkbox %}
     <input name="options[redirect]" type="hidden" value="{{ site.url }}">
     <input name="options[slug]" type="hidden" value="labels">
-    <label>Name: <input value="{{ name }}" name="fields[name]" type="text"></label>
+    <fieldset name="fields[label-1]">
+      <label>Name: <input value="{{ name }}" name="fields[name]" id="name-1" type="text"></label>
+    </fieldset>
+    <fieldset name="fields[label-2]">
+      <label>Name: <input value="{{ name }}" name="fields[name]" id="name-2" type="text"></label>
+    </fieldset>
+    <label>Name: <input value="" name="fields[name.title]" id="nametitle" type="text"></label>
     <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
     <input type="checkbox" name="fields[checkbox]" id="checkbox" {% if checkbox == 'on'%}checked{% endif %}>
     <input type="submit" value="Submit">
@@ -22,7 +28,13 @@
     {% else %}
     <input name="options[redirect]" type="hidden" value="{{ site.url }}">
     <input name="options[slug]" type="hidden" value="labels">
-    <label>Name: <input value="" name="fields[name]" type="text"></label>
+    <fieldset name="fields[label-1]">
+      <label>Name: <input value="" name="fields[name]" id="name-1" type="text"></label>
+    </fieldset>
+    <fieldset name="fields[label-2]">
+      <label>Name: <input value="" name="fields[name]" id="name-2" type="text"></label>
+    </fieldset>
+    <label>Name: <input value="" name="fields[name.title]" id="nametitle" type="text"></label>
     <!--<input value="pierre@etc-nyc.com" name="fields[email]" type="email">-->
     <input type="checkbox" name="fields[checkbox]" id="checkbox">
     <input type="submit" value="Submit">
