@@ -71,7 +71,7 @@ comments:
 
 labels:
   # (*) REQUIRED
-  allowedFields: ["name", "price", "info"]
+  allowedFields: ["name", "price", "info", "vegan", "vegetarian", "gluten-free", "dairy", "shellfish", "contains-soy", "contains-tree-nut"]
 
   # (*) REQUIRED
   branch: "master"

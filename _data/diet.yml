@@ -1,0 +1,27 @@
+- Name: Dairy
+  Slug: dairy
+  Icon: /assets/images/dairy_dietary_labels.svg
+  
+- Name: Gluten Free
+  Slug: gluten-free
+  Icon: /assets/images/glutenfree_dietary_labels.svg
+
+- Name: Shellfish Free
+  Slug: shellfish
+  Icon: /assets/images/shellfish_dietary_label.svg
+
+- Name: Contains Soy
+  Slug: contains-soy
+  Icon: /assets/images/soy_dietary_labels.svg
+
+- Name: Contains Tree Nut
+  Slug: contains-tree-nut
+  Icon: /assets/images/tree-nut_dietary_labels.svg
+
+- Name: Vegetarian
+  Slug: vegetarian
+  Icon: /assets/images/vegan_dietary_labels.svg
+
+- Name: Vegan
+  Slug: vegan
+  Icon: /assets/images/vegitarian_dietary_labels.svg
