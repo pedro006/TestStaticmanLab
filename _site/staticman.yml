@@ -81,7 +81,7 @@ labels:
   # (*) REQUIRED
   filename: "label-{@timestamp}"
 
-  format: "yaml"
+  format: "json"
 
   generatedFields:
     date:
