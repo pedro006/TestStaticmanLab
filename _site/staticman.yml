@@ -71,7 +71,7 @@ comments:
 
 labels:
   # (*) REQUIRED
-  allowedFields: ["title-1", "title-2", "title-3","info-1", "info-2", "info-3","price-1", "price-2", "price-3"]
+  allowedFields: ["name", "price", "info"]
 
   # (*) REQUIRED
   branch: "master"
