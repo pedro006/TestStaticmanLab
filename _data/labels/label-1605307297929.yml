@@ -1,0 +1,30 @@
+_id: 63cfd600-2601-11eb-ab11-f1ebf6b0e746
+name:
+  - Croissant
+  - Baguette
+  - Tarte
+  - Bagel
+info:
+  - a butter croissant
+  - 'a cripsy baguette, freshly baked'
+  - tarte aux pommes.
+  - a bagel with some cheese and salmon
+price:
+  - '3.5'
+  - '2.5'
+  - '3'
+  - '6'
+gluten-free: 'on'
+contains-tree-nut:
+  - 'on'
+  - 'on'
+vegetarian:
+  - 'on'
+  - 'on'
+dairy: 'on'
+contains-soy:
+  - 'on'
+  - 'on'
+vegan: 'on'
+shellfish: 'on'
+date: 1605307297
