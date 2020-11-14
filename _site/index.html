@@ -19,64 +19,75 @@
   
   
 
+  
+
   <form id="labels-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels">
     <input name="options[redirect]" type="hidden" value="http://localhost:4000">
     
     <label>Name-1: <input value="" name="fields[name1]" id="name1" type="text"></label><br>
     <label>Info-1: <input value="" name="fields[info1]" id="info1" type="text"></label><br>
     <label>Price-1: <input value="" name="fields[price1]" id="price1" type="text"></label><br>
-    
-    <label> <input type="checkbox" name="fields[dairy1]" id="dairy1">Dairy</label>
-    
-    <label> <input type="checkbox" name="fields[gluten-free1]" id="gluten-free1">Gluten Free</label>
-    
-    <label> <input type="checkbox" name="fields[shellfish1]" id="shellfish1">Shellfish Free</label>
-    
-    <label> <input type="checkbox" name="fields[contains-soy1]" id="contains-soy1">Contains Soy</label>
-    
-    <label> <input type="checkbox" name="fields[contains-tree-nut1]" id="contains-tree-nut1">Contains Tree Nut</label>
-    
-    <label> <input type="checkbox" name="fields[vegetarian1]" id="vegetarian1">Vegetarian</label>
-    
-    <label> <input type="checkbox" name="fields[vegan1]" id="vegan1">Vegan</label>
+    <select name="fields[diet1]" id="diet1" multiple>
+      
+      <option value="dairy">Dairy</option>
+      
+      <option value="gluten-free">Gluten Free</option>
+      
+      <option value="shellfish">Shellfish Free</option>
+      
+      <option value="contains-soy">Contains Soy</option>
+      
+      <option value="contains-tree-nut">Contains Tree Nut</option>
+      
+      <option value="vegetarian">Vegetarian</option>
+      
+      <option value="vegan">Vegan</option>
+      
+    </select>
     <br>
     
     <label>Name-2: <input value="" name="fields[name2]" id="name2" type="text"></label><br>
     <label>Info-2: <input value="" name="fields[info2]" id="info2" type="text"></label><br>
     <label>Price-2: <input value="" name="fields[price2]" id="price2" type="text"></label><br>
-    
-    <label> <input type="checkbox" name="fields[dairy2]" id="dairy2">Dairy</label>
-    
-    <label> <input type="checkbox" name="fields[gluten-free2]" id="gluten-free2">Gluten Free</label>
-    
-    <label> <input type="checkbox" name="fields[shellfish2]" id="shellfish2">Shellfish Free</label>
-    
-    <label> <input type="checkbox" name="fields[contains-soy2]" id="contains-soy2">Contains Soy</label>
-    
-    <label> <input type="checkbox" name="fields[contains-tree-nut2]" id="contains-tree-nut2">Contains Tree Nut</label>
-    
-    <label> <input type="checkbox" name="fields[vegetarian2]" id="vegetarian2">Vegetarian</label>
-    
-    <label> <input type="checkbox" name="fields[vegan2]" id="vegan2">Vegan</label>
+    <select name="fields[diet2]" id="diet2" multiple>
+      
+      <option value="dairy">Dairy</option>
+      
+      <option value="gluten-free">Gluten Free</option>
+      
+      <option value="shellfish">Shellfish Free</option>
+      
+      <option value="contains-soy">Contains Soy</option>
+      
+      <option value="contains-tree-nut">Contains Tree Nut</option>
+      
+      <option value="vegetarian">Vegetarian</option>
+      
+      <option value="vegan">Vegan</option>
+      
+    </select>
     <br>
     
     <label>Name-3: <input value="" name="fields[name3]" id="name3" type="text"></label><br>
     <label>Info-3: <input value="" name="fields[info3]" id="info3" type="text"></label><br>
     <label>Price-3: <input value="" name="fields[price3]" id="price3" type="text"></label><br>
-    
-    <label> <input type="checkbox" name="fields[dairy3]" id="dairy3">Dairy</label>
-    
-    <label> <input type="checkbox" name="fields[gluten-free3]" id="gluten-free3">Gluten Free</label>
-    
-    <label> <input type="checkbox" name="fields[shellfish3]" id="shellfish3">Shellfish Free</label>
-    
-    <label> <input type="checkbox" name="fields[contains-soy3]" id="contains-soy3">Contains Soy</label>
-    
-    <label> <input type="checkbox" name="fields[contains-tree-nut3]" id="contains-tree-nut3">Contains Tree Nut</label>
-    
-    <label> <input type="checkbox" name="fields[vegetarian3]" id="vegetarian3">Vegetarian</label>
-    
-    <label> <input type="checkbox" name="fields[vegan3]" id="vegan3">Vegan</label>
+    <select name="fields[diet3]" id="diet3" multiple>
+      
+      <option value="dairy">Dairy</option>
+      
+      <option value="gluten-free">Gluten Free</option>
+      
+      <option value="shellfish">Shellfish Free</option>
+      
+      <option value="contains-soy">Contains Soy</option>
+      
+      <option value="contains-tree-nut">Contains Tree Nut</option>
+      
+      <option value="vegetarian">Vegetarian</option>
+      
+      <option value="vegan">Vegan</option>
+      
+    </select>
     <br>
     
     <input type="submit" value="Submit">
