@@ -1,0 +1,22 @@
+_id: db2fb9a0-2696-11eb-858c-577206e1afff
+name1: a
+info1: b
+price1: '3'
+diet1:
+  - dairy
+  - gluten-free
+  - shellfish
+name2: c
+info2: d
+price2: '4'
+diet2:
+  - gluten-free
+  - vegetarian
+  - vegan
+name3: r
+info3: f
+price3: '45'
+diet3:
+  - contains-tree-nut
+  - vegetarian
+date: 1605371493
