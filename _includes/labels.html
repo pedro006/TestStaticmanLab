@@ -6,18 +6,14 @@
   {% endif %}
 
   <form id="labels-form" method="POST" action="{{ site.staticman.apilabel }}">
-
     <input name="options[redirect]" type="hidden" value="{{ site.url }}">
-
-    {% for i in (1...4) %}
-    <label>Name-{{i}}: <input value="" name="fields[name]" id="name-{{i}}" type="text"></label><br>
-    <label>Info-{{i}}: <input value="" name="fields[info]" id="info-{{i}}" type="text"></label><br>
-    <label>Price-{{i}}: <input value="" name="fields[price]" id="price-{{i}}" type="text"></label><br>
+    {% for i in (1...3) %}
+    <label>Name-{{i}}: <input value="" name="fields[name{{i}}]" id="name{{i}}" type="text"></label><br>
+    <label>Info-{{i}}: <input value="" name="fields[info{{i}}]" id="info{{i}}" type="text"></label><br>
+    <label>Price-{{i}}: <input value="" name="fields[price{{i}}]" id="price{{i}}" type="text"></label><br>
     {% for diet in site.data.diet %}
-    <label> <input type="checkbox" name="fields[{{diet.Slug}}]" id="diet-{{i}}-{{forloop.index}}">{{diet.Name}}</label>
+    <label> <input type="checkbox" name="fields[{{diet.Slug}}{{i}}]" id="{{diet.Slug}}{{i}}">{{diet.Name}}</label>
     {% endfor %}<br>
     {% endfor %}
-
     <input type="submit" value="Submit">
-
   </form>

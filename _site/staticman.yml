@@ -71,7 +71,7 @@ comments:
 
 labels:
   # (*) REQUIRED
-  allowedFields: ["name", "price", "info", "vegan", "vegetarian", "gluten-free", "dairy", "shellfish", "contains-soy", "contains-tree-nut"]
+  allowedFields: ["name1", "price1", "info1","name2", "price2", "info2","name3", "price3", "info3","name4", "price4", "info4","name5", "price5", "info5","name6", "price6", "info6","name7", "price7", "info7","name8", "price8", "info8", "vegan1", "vegetarian1", "gluten-free1", "dairy1", "shellfish1", "contains-soy1", "contains-tree-nut1","vegan2", "vegetarian2", "gluten-free2", "dairy2", "shellfish2", "contains-soy2", "contains-tree-nu2t","vegan3", "vegetarian3", "gluten-free3", "dairy3", "shellfish3", "contains-soy3", "contains-tree-nut3"]
 
   # (*) REQUIRED
   branch: "master"
