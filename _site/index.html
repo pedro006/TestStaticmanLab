@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Minimal Staticman v3 Demo</title>
 </head>
 
 <body>
-<header class="header">
-  <h1>Minimal Staticman v3 Demo</h1>
-  
+  <header class="header">
+    <h1>Minimal Staticman v3 Demo</h1>
+    
     <h2>A barebone GitHub Pages with static comments</h2>
-  
-</header>
-<p>Fork me on <a href="https://github.com/VincentTam/TestStaticmanLab/">GitHub</a>.</p>
+    
+  </header>
+  <p>Fork me on <a href="https://github.com/VincentTam/TestStaticmanLab/">GitHub</a>.</p>
 
 <div class="comments">
   <h3>Labels</h3>
@@ -20,76 +21,410 @@
   
 
   
+  
+  
+  
 
-  <form id="labels-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels">
+  
+  
+  <p datainput="name1" contenteditable="true">a</p>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <p datainput="info1" contenteditable="true">b</p>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <p datainput="price1" contenteditable="true">2</p>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="dairy1" type="checkbox" name="" id="" >
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="gluten-free1" type="checkbox" name="" id="" >
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="shellfish1" type="checkbox" name="" id="" checked>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="contains-soy1" type="checkbox" name="" id="" >
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="contains-tree-nut1" type="checkbox" name="" id="" checked>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="vegetarian1" type="checkbox" name="" id="" >
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <input datainput="vegan1" type="checkbox" name="" id="" >
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  <p datainput="name2" contenteditable="true">c</p>
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <p datainput="info2" contenteditable="true">d</p>
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <p datainput="price2" contenteditable="true">3</p>
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="dairy2" type="checkbox" name="" id="" checked>
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="gluten-free2" type="checkbox" name="" id="" >
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="shellfish2" type="checkbox" name="" id="" checked>
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="contains-soy2" type="checkbox" name="" id="" >
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="contains-tree-nut2" type="checkbox" name="" id="" >
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="vegetarian2" type="checkbox" name="" id="" >
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <input datainput="vegan2" type="checkbox" name="" id="" >
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  <p datainput="name3" contenteditable="true">e</p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <p datainput="info3" contenteditable="true">f</p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <p datainput="price3" contenteditable="true">4.5</p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="dairy3" type="checkbox" name="" id="" >
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="gluten-free3" type="checkbox" name="" id="" checked>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="shellfish3" type="checkbox" name="" id="" >
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="contains-soy3" type="checkbox" name="" id="" >
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="contains-tree-nut3" type="checkbox" name="" id="" checked>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="vegetarian3" type="checkbox" name="" id="" >
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <input datainput="vegan3" type="checkbox" name="" id="" >
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <form onsubmit="getdata(event)" id="labels-form" method="POST" action="https://staticman3.herokuapp.com/v3/entry/github/pedro006/teststaticman/master/labels">
     <input name="options[redirect]" type="hidden" value="http://localhost:4000">
     
-    <label>Name-1: <input value="" name="fields[name]" id="name1" type="text"></label><br>
-    <label>Info-1: <input value="" name="fields[info]" id="info1" type="text"></label><br>
-    <label>Price-1: <input value="" name="fields[price]" id="price1" type="text"></label><br>
+    <label>Name-1: <input value="" datatarget="name1" name="fields[name]" id="name1"
+        type="text"></label><br>
+    <label>Info-1: <input value="" datatarget="info1" name="fields[info]" id="info1"
+        type="text"></label><br>
+    <label>Price-1: <input value="" datatarget="price1" name="fields[price]" id="price1"
+        type="text"></label><br>
     
-    <label><input name="fields[dairy]" value="off">Dairy</label>
+    <label><input datatarget="dairy1" name="fields[dairy]" value="">Dairy</label>
     
-    <label><input name="fields[gluten-free]" value="off">Gluten Free</label>
+    <label><input datatarget="gluten-free1" name="fields[gluten-free]" value="">Gluten Free</label>
     
-    <label><input name="fields[shellfish]" value="off">Shellfish Free</label>
+    <label><input datatarget="shellfish1" name="fields[shellfish]" value="">Shellfish Free</label>
     
-    <label><input name="fields[contains-soy]" value="off">Contains Soy</label>
+    <label><input datatarget="contains-soy1" name="fields[contains-soy]" value="">Contains Soy</label>
     
-    <label><input name="fields[contains-tree-nut]" value="off">Contains Tree Nut</label>
+    <label><input datatarget="contains-tree-nut1" name="fields[contains-tree-nut]" value="">Contains Tree Nut</label>
     
-    <label><input name="fields[vegetarian]" value="off">Vegetarian</label>
+    <label><input datatarget="vegetarian1" name="fields[vegetarian]" value="">Vegetarian</label>
     
-    <label><input name="fields[vegan]" value="off">Vegan</label>
-    
-    <br>
-    
-    <label>Name-2: <input value="" name="fields[name]" id="name2" type="text"></label><br>
-    <label>Info-2: <input value="" name="fields[info]" id="info2" type="text"></label><br>
-    <label>Price-2: <input value="" name="fields[price]" id="price2" type="text"></label><br>
-    
-    <label><input name="fields[dairy]" value="off">Dairy</label>
-    
-    <label><input name="fields[gluten-free]" value="off">Gluten Free</label>
-    
-    <label><input name="fields[shellfish]" value="off">Shellfish Free</label>
-    
-    <label><input name="fields[contains-soy]" value="off">Contains Soy</label>
-    
-    <label><input name="fields[contains-tree-nut]" value="off">Contains Tree Nut</label>
-    
-    <label><input name="fields[vegetarian]" value="off">Vegetarian</label>
-    
-    <label><input name="fields[vegan]" value="off">Vegan</label>
+    <label><input datatarget="vegan1" name="fields[vegan]" value="">Vegan</label>
     
     <br>
     
-    <label>Name-3: <input value="" name="fields[name]" id="name3" type="text"></label><br>
-    <label>Info-3: <input value="" name="fields[info]" id="info3" type="text"></label><br>
-    <label>Price-3: <input value="" name="fields[price]" id="price3" type="text"></label><br>
+    <label>Name-2: <input value="" datatarget="name2" name="fields[name]" id="name2"
+        type="text"></label><br>
+    <label>Info-2: <input value="" datatarget="info2" name="fields[info]" id="info2"
+        type="text"></label><br>
+    <label>Price-2: <input value="" datatarget="price2" name="fields[price]" id="price2"
+        type="text"></label><br>
     
-    <label><input name="fields[dairy]" value="off">Dairy</label>
+    <label><input datatarget="dairy2" name="fields[dairy]" value="">Dairy</label>
     
-    <label><input name="fields[gluten-free]" value="off">Gluten Free</label>
+    <label><input datatarget="gluten-free2" name="fields[gluten-free]" value="">Gluten Free</label>
     
-    <label><input name="fields[shellfish]" value="off">Shellfish Free</label>
+    <label><input datatarget="shellfish2" name="fields[shellfish]" value="">Shellfish Free</label>
     
-    <label><input name="fields[contains-soy]" value="off">Contains Soy</label>
+    <label><input datatarget="contains-soy2" name="fields[contains-soy]" value="">Contains Soy</label>
     
-    <label><input name="fields[contains-tree-nut]" value="off">Contains Tree Nut</label>
+    <label><input datatarget="contains-tree-nut2" name="fields[contains-tree-nut]" value="">Contains Tree Nut</label>
     
-    <label><input name="fields[vegetarian]" value="off">Vegetarian</label>
+    <label><input datatarget="vegetarian2" name="fields[vegetarian]" value="">Vegetarian</label>
     
-    <label><input name="fields[vegan]" value="off">Vegan</label>
+    <label><input datatarget="vegan2" name="fields[vegan]" value="">Vegan</label>
     
     <br>
     
-    <input type="submit" value="Submit">
+    <label>Name-3: <input value="" datatarget="name3" name="fields[name]" id="name3"
+        type="text"></label><br>
+    <label>Info-3: <input value="" datatarget="info3" name="fields[info]" id="info3"
+        type="text"></label><br>
+    <label>Price-3: <input value="" datatarget="price3" name="fields[price]" id="price3"
+        type="text"></label><br>
+    
+    <label><input datatarget="dairy3" name="fields[dairy]" value="">Dairy</label>
+    
+    <label><input datatarget="gluten-free3" name="fields[gluten-free]" value="">Gluten Free</label>
+    
+    <label><input datatarget="shellfish3" name="fields[shellfish]" value="">Shellfish Free</label>
+    
+    <label><input datatarget="contains-soy3" name="fields[contains-soy]" value="">Contains Soy</label>
+    
+    <label><input datatarget="contains-tree-nut3" name="fields[contains-tree-nut]" value="">Contains Tree Nut</label>
+    
+    <label><input datatarget="vegetarian3" name="fields[vegetarian]" value="">Vegetarian</label>
+    
+    <label><input datatarget="vegan3" name="fields[vegan]" value="">Vegan</label>
+    
+    <br>
+    
+    <input type="submit" id="submitbutton" value="Submit">
   </form>
 
 <footer>
   <p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Flocalhost%3A4000">Valid HTML5</a>
     in public domain.</p>
 </footer>
+  <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
