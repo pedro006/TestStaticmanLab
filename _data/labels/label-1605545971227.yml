@@ -1,0 +1,42 @@
+_id: 18344450-282d-11eb-9df6-7dc7046a01b6
+name:
+  - first title<br>
+  - second
+  - third title<br>
+info:
+  - first info<br>
+  - info second<br>
+  - third info<br>
+price:
+  - '3.5'
+  - '3'
+  - '4.5'
+dairy:
+  - 'on'
+  - 'off'
+  - 'off'
+gluten-free:
+  - 'off'
+  - 'off'
+  - 'off'
+shellfish:
+  - 'on'
+  - 'on'
+  - 'on'
+contains-soy:
+  - 'off'
+  - 'off'
+  - 'on'
+contains-tree-nut:
+  - 'off'
+  - 'off'
+  - 'off'
+vegetarian:
+  - 'off'
+  - 'on'
+  - 'off'
+vegan:
+  - 'on'
+  - 'on'
+  - 'off'
+date: 1605545971
